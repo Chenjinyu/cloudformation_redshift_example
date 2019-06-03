@@ -1,0 +1,40 @@
+[
+  {
+    "ParameterKey": "DatabaseName",
+    "ParameterValue": "jinyu-redshift-spectrum"
+  },
+  {
+    "ParameterKey": "ClusterType",
+    "ParameterValue": "single-node"
+  },
+  {
+    "ParameterKey": "NumberOfNodes",
+    "ParameterValue": "1"
+  },
+  {
+    "ParameterKey": "NodeType",
+    "ParameterValue": "dc2.large"
+  },
+  {
+    "ParameterKey": "MasterUsername",
+    "ParameterValue": "xxx"
+  },
+  {
+    "ParameterKey": "MasterUserPassword",
+    "ParameterValue": "xxx"
+  },
+  {
+    "ParameterKey": "InboundTraffic",
+    "ParameterValue": "0.0.0.0/0"
+  },
+  {
+    "ParameterKey": "RedshiftBucketName",
+    "ParameterValue": "jinyu-colibri-digital-source-data"
+  },
+  {
+    "ParameterKey": "SpectrumBucketName",
+    "ParameterValue": "jinyu-colibri-digital-source-data-spectrum"
+  }
+]
+
+
