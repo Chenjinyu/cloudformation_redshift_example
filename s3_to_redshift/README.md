@@ -28,10 +28,10 @@ Make sure you change the name of the S3 bucket in params.json
 * Ideally we should easily be able to understand the semantics of the dataset - i.e. what it means without any domain specific knowledge.
 
 ```
-* aws cloudformation create-stack --stack-name first-redshift --template-body file://create_cluster.json --parameters file://params.json --capabilities CAPABILITY_IAM --profile Jinyu
-* aws cloudformation describe-stacks --stack-name first-redshift  --profile Jinyu
-* aws cloudformation delete-stack --stack-name first-redshift  --profile Jinyu
-* aws cloudformation update-stack --stack-name redshift-spectrum --template-body file://create_cluster.json --parameters file://params.json --capabilities CAPABILITY_IAM --profile Jinyu
+aws cloudformation create-stack --stack-name first-redshift --template-body file://create_cluster.json --parameters file://params.json --capabilities CAPABILITY_IAM --profile Jinyu
+aws cloudformation describe-stacks --stack-name first-redshift  --profile Jinyu
+aws cloudformation delete-stack --stack-name first-redshift  --profile Jinyu
+aws cloudformation update-stack --stack-name redshift-spectrum --template-body file://create_cluster.json --parameters file://params.json --capabilities CAPABILITY_IAM --profile Jinyu
 ```
 
 ## see the progress in the cloudformation, and once the redshift has been created, go to Redshift dashborad.
