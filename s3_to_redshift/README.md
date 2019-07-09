@@ -27,17 +27,18 @@ Make sure you change the name of the S3 bucket in params.json
 * The data needs to be easily downloadable in a recognizable flat file format.
 * Ideally we should easily be able to understand the semantics of the dataset - i.e. what it means without any domain specific knowledge.
 
-
+```
 * aws cloudformation create-stack --stack-name first-redshift --template-body file://create_cluster.json --parameters file://params.json --capabilities CAPABILITY_IAM --profile Jinyu
 * aws cloudformation describe-stacks --stack-name first-redshift  --profile Jinyu
 * aws cloudformation delete-stack --stack-name first-redshift  --profile Jinyu
 * aws cloudformation update-stack --stack-name redshift-spectrum --template-body file://create_cluster.json --parameters file://params.json --capabilities CAPABILITY_IAM --profile Jinyu
+```
 
 ## see the progress in the cloudformation, and once the redshift has been created, go to Redshift dashborad.
 
 
 ## connect to the new created Redshfit. eg. DataGrip, Pestico
-* run `* aws cloudformation describe-stacks --stack-name first-redshift`, from the Outputs find out the Redsfhit endpoint. 
+* run ` * aws cloudformation describe-stacks --stack-name first-redshift `, from the Outputs find out the Redsfhit endpoint. 
 * from the params.json find your database name, username and password.
 * run the query from copy_data.sql copy files from S3 to Redshift
 
